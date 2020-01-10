@@ -1,0 +1,13 @@
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.0/ConsoleApp1
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.0/ConsoleApp1.deps.json
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.0/ConsoleApp1.runtimeconfig.json
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.0/ConsoleApp1.runtimeconfig.dev.json
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.0/ConsoleApp1.dll
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.0/ConsoleApp1.pdb
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.0/ConsoleApp1.csprojAssemblyReference.cache
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.0/ConsoleApp1.AssemblyInfoInputs.cache
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.0/ConsoleApp1.AssemblyInfo.cs
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.0/ConsoleApp1.dll
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.0/ConsoleApp1.pdb
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.0/RestSharp.dll
+/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.0/ConsoleApp1.csproj.CopyComplete
