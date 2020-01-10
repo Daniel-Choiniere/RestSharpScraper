@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {}
+    "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/RestSharpScraper.csproj": {}
   },
   "projects": {
-    "/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {
+    "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/RestSharpScraper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
-        "projectName": "ConsoleApp1",
-        "projectPath": "/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+        "projectUniqueName": "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/RestSharpScraper.csproj",
+        "projectName": "RestSharpScraper",
+        "projectPath": "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/RestSharpScraper.csproj",
         "packagesPath": "/Users/danchoiniere/.nuget/packages/",
-        "outputPath": "/Users/danchoiniere/careerDevs/capstone/ConsoleApp1/ConsoleApp1/obj/",
+        "outputPath": "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -42,10 +42,6 @@
             "RestSharp": {
               "target": "Package",
               "version": "[106.10.1-alpha.0.9, )"
-            },
-            "RestSharp.NetCore": {
-              "target": "Package",
-              "version": "[105.2.4-rc4-24214-01, )"
             }
           },
           "imports": [

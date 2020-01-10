@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using RestSharp;
 using RestSharp.Authenticators;
 
-namespace ConsoleApp1
+namespace RestSharpScraper
 {
     class Program
     {
@@ -19,7 +19,7 @@ namespace ConsoleApp1
     {
         public static async Task<string> ApiCall(string apiKey)
         {
-            RestClient client = new RestClient("https://blockchain.info/ticker");
+            RestClient client = new RestClient("https://api.nytimes.com/svc/topstories/v2");
             RestRequest request = new RestRequest($"home.json?api-key={apiKey}", Method.GET);
             var response = await client.ExecuteTaskAsync(request);
             return response.Content;

@@ -1,0 +1,13 @@
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/bin/Debug/netcoreapp3.0/RestSharpScraper
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/bin/Debug/netcoreapp3.0/RestSharpScraper.deps.json
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/bin/Debug/netcoreapp3.0/RestSharpScraper.runtimeconfig.json
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/bin/Debug/netcoreapp3.0/RestSharpScraper.runtimeconfig.dev.json
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/bin/Debug/netcoreapp3.0/RestSharpScraper.dll
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/bin/Debug/netcoreapp3.0/RestSharpScraper.pdb
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/bin/Debug/netcoreapp3.0/RestSharp.dll
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/obj/Debug/netcoreapp3.0/RestSharpScraper.csprojAssemblyReference.cache
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/obj/Debug/netcoreapp3.0/RestSharpScraper.AssemblyInfoInputs.cache
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/obj/Debug/netcoreapp3.0/RestSharpScraper.AssemblyInfo.cs
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/obj/Debug/netcoreapp3.0/RestSharpScraper.csproj.CopyComplete
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/obj/Debug/netcoreapp3.0/RestSharpScraper.dll
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/obj/Debug/netcoreapp3.0/RestSharpScraper.pdb

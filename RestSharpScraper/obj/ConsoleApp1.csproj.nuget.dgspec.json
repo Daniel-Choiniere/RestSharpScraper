@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/ConsoleApp1/ConsoleApp1.csproj": {}
+  },
+  "projects": {
+    "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/ConsoleApp1/ConsoleApp1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/ConsoleApp1/ConsoleApp1.csproj",
+        "projectName": "ConsoleApp1",
+        "projectPath": "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/ConsoleApp1/ConsoleApp1.csproj",
+        "packagesPath": "/Users/danchoiniere/.nuget/packages/",
+        "outputPath": "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/ConsoleApp1/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/danchoiniere/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.10.1-alpha.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
