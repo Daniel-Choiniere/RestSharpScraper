@@ -19,8 +19,13 @@ namespace RestSharpScraper
     {
         public static async Task<string> ApiCall(string apiKey)
         {
-            RestClient client = new RestClient("https://api.nytimes.com/svc/topstories/v2");
-            RestRequest request = new RestRequest($"home.json?api-key={apiKey}", Method.GET);
+            RestClient client = new RestClient("https://www.alphavantage.co");
+            RestRequest request =
+                new RestRequest(
+                    $"/query?function=DIGITAL_CURRENCY_MONTHLY&symbol=BTC&market=USD&apikey={apiKey}",
+                    Method.GET);
+
+
             var response = await client.ExecuteTaskAsync(request);
             return response.Content;
         }
