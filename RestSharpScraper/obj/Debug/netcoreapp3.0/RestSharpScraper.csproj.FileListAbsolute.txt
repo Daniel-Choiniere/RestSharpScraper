@@ -11,3 +11,4 @@
 /Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/obj/Debug/netcoreapp3.0/RestSharpScraper.csproj.CopyComplete
 /Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/obj/Debug/netcoreapp3.0/RestSharpScraper.dll
 /Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/obj/Debug/netcoreapp3.0/RestSharpScraper.pdb
+/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
