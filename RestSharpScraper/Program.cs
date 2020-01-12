@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using RestSharp;
-using RestSharp.Authenticators;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Microsoft.Data.SqlClient;
+
 
 namespace RestSharpScraper
 {
@@ -19,10 +18,44 @@ namespace RestSharpScraper
             var apiCallTask = ApiHelper.ApiCall(currenceyFrom, currencyTo, apiKey);
             var result = apiCallTask.Result;
 
-            InjectandIntitate(result);
+            Crypto exchangedCrypto = ConsumeandIntitate(result);
+
+            InjectToDatabase(exchangedCrypto);
+
         }
 
-        private static void InjectandIntitate(string result)
+        private static void InjectToDatabase(Crypto exchangedCrypto)
+        {
+             string connection =
+                @"Server=tcp:finance-scraper.database.windows.net,1433;Initial Catalog=CoinMarketCap;Persist Security Info=False;User ID=Dan;Password=iLOVEcareerdevs1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
+            using (SqlConnection dbConnection = new SqlConnection(connection))
+            {
+                dbConnection.Open();
+                
+                        SqlCommand insertCommand = new SqlCommand(
+                            "INSERT into dbo.CryptoData (DateTimeScraped, FromCode, FromName, ToCode, ToName, ExchangeRate, LastRefreshed, TimeZone, BidPrice, AskPrice) VALUES (@dateTime, @fromCode, @fromName, @toCode, @toName, @exchangeRate, @lastRefreshed, timeZone, bidPrice, askPrice)",
+                            dbConnection);
+                        insertCommand.Parameters.AddWithValue("@dateTime", DateTime.Now);
+                        insertCommand.Parameters.AddWithValue("@fromCode", exchangedCrypto.FromCode);
+                        insertCommand.Parameters.AddWithValue("@fromName", exchangedCrypto.FromName);
+                        insertCommand.Parameters.AddWithValue("@toCode", exchangedCrypto.ToCode);
+                        insertCommand.Parameters.AddWithValue("@toName", exchangedCrypto.ToName);
+                        insertCommand.Parameters.AddWithValue("@exchangeRate", exchangedCrypto.ExchangeRate);
+                        insertCommand.Parameters.AddWithValue("@lastRefreshed", exchangedCrypto.LastRefreshed);
+                        insertCommand.Parameters.AddWithValue("@timeZone", exchangedCrypto.TimeZone);
+                        insertCommand.Parameters.AddWithValue("@bidPrice", exchangedCrypto.BidPrice);
+                        insertCommand.Parameters.AddWithValue("@askPrice", exchangedCrypto.AskPrice);
+                        
+                        insertCommand.ExecuteNonQuery();
+                        
+                        Console.WriteLine("Data Collection Successful");
+                        dbConnection.Close();
+            }
+        }
+        
+
+        private static Crypto ConsumeandIntitate(string result)
         {
             JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(result);
             
@@ -42,6 +75,7 @@ namespace RestSharpScraper
             Console.WriteLine(exchangedCrypto.FromCode);
             Console.WriteLine(exchangedCrypto.ExchangeRate);
 
+            return exchangedCrypto;
         }
     }
 
