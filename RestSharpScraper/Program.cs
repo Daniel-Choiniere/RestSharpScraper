@@ -33,9 +33,9 @@ namespace RestSharpScraper
                 dbConnection.Open();
                 
                         SqlCommand insertCommand = new SqlCommand(
-                            "INSERT into dbo.ExchangeRates (FromCode, FromName, ToCode, ToName, ExchangeRate, LastRefreshed, TimeZone, BidPrice, AskPrice) VALUES (@fromCode, @fromName, @toCode, @toName, @exchangeRate, @lastRefreshed, @timeZone, @bidPrice, @askPrice)",
+                            "INSERT into dbo.ExchangeRates (DateTimePulled, FromCode, FromName, ToCode, ToName, ExchangeRate, LastRefreshed, TimeZone, BidPrice, AskPrice) VALUES (@DateTime, @fromCode, @fromName, @toCode, @toName, @exchangeRate, @lastRefreshed, @timeZone, @bidPrice, @askPrice)",
                             dbConnection);
-                        // insertCommand.Parameters.AddWithValue("@dateTime", DateTime.Now);
+                        insertCommand.Parameters.AddWithValue("@dateTime", DateTime.Now);
                         insertCommand.Parameters.AddWithValue("@fromCode", exchangedCrypto.FromCode);
                         insertCommand.Parameters.AddWithValue("@fromName", exchangedCrypto.FromName);
                         insertCommand.Parameters.AddWithValue("@toCode", exchangedCrypto.ToCode);
