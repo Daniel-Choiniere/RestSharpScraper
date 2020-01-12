@@ -5,14 +5,13 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Microsoft.Data.SqlClient;
 
-
 namespace RestSharpScraper
 {
     class Program
     {
         static void Main()
         {
-            var currenceyFrom = "BTC";
+            var currenceyFrom = "XRP";
             var currencyTo = "USD";
             var apiKey = "WcATy9IyxwbTeHbB0lsYcTqr6bAeQEmV";
             var apiCallTask = ApiHelper.ApiCall(currenceyFrom, currencyTo, apiKey);
@@ -34,9 +33,9 @@ namespace RestSharpScraper
                 dbConnection.Open();
                 
                         SqlCommand insertCommand = new SqlCommand(
-                            "INSERT into dbo.CryptoData (DateTimeScraped, FromCode, FromName, ToCode, ToName, ExchangeRate, LastRefreshed, TimeZone, BidPrice, AskPrice) VALUES (@dateTime, @fromCode, @fromName, @toCode, @toName, @exchangeRate, @lastRefreshed, timeZone, bidPrice, askPrice)",
+                            "INSERT into dbo.ExchangeRates (FromCode, FromName, ToCode, ToName, ExchangeRate, LastRefreshed, TimeZone, BidPrice, AskPrice) VALUES (@fromCode, @fromName, @toCode, @toName, @exchangeRate, @lastRefreshed, @timeZone, @bidPrice, @askPrice)",
                             dbConnection);
-                        insertCommand.Parameters.AddWithValue("@dateTime", DateTime.Now);
+                        // insertCommand.Parameters.AddWithValue("@dateTime", DateTime.Now);
                         insertCommand.Parameters.AddWithValue("@fromCode", exchangedCrypto.FromCode);
                         insertCommand.Parameters.AddWithValue("@fromName", exchangedCrypto.FromName);
                         insertCommand.Parameters.AddWithValue("@toCode", exchangedCrypto.ToCode);
@@ -72,9 +71,6 @@ namespace RestSharpScraper
                 AskPrice= jsonResponse["Realtime Currency Exchange Rate"]["9. Ask Price"].ToString(),
             };
             
-            Console.WriteLine(exchangedCrypto.FromCode);
-            Console.WriteLine(exchangedCrypto.ExchangeRate);
-
             return exchangedCrypto;
         }
     }
