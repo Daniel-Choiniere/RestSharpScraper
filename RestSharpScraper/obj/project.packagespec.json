@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/RestSharpScraper.csproj",
+    "projectUniqueName": "/Users/danchoiniere/careerDevs/RestSharpScraper/RestSharpScraper/RestSharpScraper.csproj",
     "projectName": "RestSharpScraper",
-    "projectPath": "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/RestSharpScraper.csproj",
-    "outputPath": "/Users/danchoiniere/careerDevs/capstoneProjects/RestSharpScraper/RestSharpScraper/obj/",
+    "projectPath": "/Users/danchoiniere/careerDevs/RestSharpScraper/RestSharpScraper/RestSharpScraper.csproj",
+    "outputPath": "/Users/danchoiniere/careerDevs/RestSharpScraper/RestSharpScraper/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
